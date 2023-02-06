@@ -19,7 +19,7 @@ import static java.util.Objects.nonNull;
 public class PlayerService {
     private final IPlayerRepository playerRepository;
 
-    public PlayerService(@Qualifier("db") @Autowired IPlayerRepository playerRepository) {
+    public PlayerService(@Qualifier("memory") @Autowired IPlayerRepository playerRepository) {
         this.playerRepository = playerRepository;
     }
 
